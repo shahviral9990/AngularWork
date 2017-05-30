@@ -1,0 +1,14 @@
+<h1>{{str}}</h1>
+<button [hidden]="flag" type="submit" (click)="onClick()"  >Click Me</button>
+
+<input type="text" [(ngModel)]="str"  >
+<h1>{{str}}</h1>
+
+<input type="text" #input1 (keyup)="0"  >
+<h1>{{input1.value}}</h1>
+
+<input type="number" [(ngModel)]="no1" />
+<input type="number" [(ngModel)]="no2" />
+<button (click)="onAdd()" >Add</button>
+<h1>{{ans}}</h1>
+

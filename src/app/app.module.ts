@@ -7,16 +7,21 @@ import { AppComponent } from './app.component';
 import { DemoComponent } from './demo/demo.component';
 import { TasksComponent } from './tasks/tasks.component';
 
+import { router } from "./app.routing";
+import { HeaderComponent } from './header.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     DemoComponent,
-    TasksComponent
+    TasksComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    router
   ],
   providers: [],
   bootstrap: [AppComponent]
